@@ -1,24 +1,13 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "module": "esnext",
-    "lib": [
-      "es2015",
-      "dom"
-    ],
+    "module": "ESNEXT",
+    "target": "ES2017",
     "declaration": true,
-    "jsx": "react",
-    "outDir": "lib",
-    "typeRoots": [
-      "./node_modules/@types",
-      "./node_modules/@remax"
-    ]
+    "rootDir": "modules",
+    "outDir": "esm",
+    "skipLibCheck": true,
+    "resolveJsonModule": true
   },
-  "include": [
-    "src/**/*",
-    "typings/**/*"
-  ],
-  "exclude": [
-    "__tests__/**/*"
-  ]
+  "exclude": ["cjs", "esm"]
 }

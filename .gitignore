@@ -52,14 +52,13 @@ jspm_packages/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+/.env
 
 # next.js build output
 .next
 
 dist
 
-node_modules
 demo-minitomato
 lib
 
@@ -68,3 +67,15 @@ lib
 
 packages/*/yarn.lock
 packages/*/package-lock.json
+
+!/packages/**/__tests__/integration/fixtures/**/node_modules
+
+integration-test/
+.idea/
+remax.iml
+.tea/
+tsconfig.tsbuildinfo
+cjs
+esm
+
+.umi/

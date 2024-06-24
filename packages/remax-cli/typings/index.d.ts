@@ -1,18 +1,19 @@
-declare module 'rollup-plugin-babel';
-declare module '@meck/rollup-plugin-postcss';
-declare module 'rollup-plugin-json';
-declare module 'rollup-plugin-node-resolve';
-declare module 'rollup-plugin-progress';
-declare module 'rollup-plugin-delete';
-declare module 'rollup-plugin-alias';
-declare module 'rollup-plugin-inject';
-declare module 'rollup-plugin-url';
-declare module 'rollup-plugin-typescript';
-declare module 'postcss-url';
-declare module 'mkdirp';
+declare module 'webpack/lib/*';
+declare module 'babel-loader';
+declare module 'memory-fs/lib/join';
 declare module '@remax/postcss-px2units';
+declare module 'postcss-url';
+declare module 'postcss-preset-env';
 declare module '@babel/helper-module-imports';
-declare module 'acorn-walk';
 declare module 'scheduler';
-declare module 'slash2';
-declare module 'named-exports-db';
+declare module 'sander';
+declare module 'webpack-virtual-modules';
+declare module 'copy-webpack-plugin';
+declare module 'webpack-node-externals';
+declare module 'babel-plugin-module-resolver';
+
+declare namespace jest {
+  interface Matchers<R, T> {
+    toMatchOutput: (output: string) => R;
+  }
+}

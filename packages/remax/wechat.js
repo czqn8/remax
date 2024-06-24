@@ -1,1 +1,1 @@
-export * from './lib/adapters/wechat';
+export * from '@remax/wechat';
